@@ -24,6 +24,11 @@ const Header = () => {
       path: "/generate",
       type: "public",
     },
+    {
+      name: "Kitchen",
+      path: "/kitchen",
+      type: "public",
+    },
   ];
   return (
     <nav className="overflow-x-clip">
@@ -83,13 +88,12 @@ const Header = () => {
 
           {
             <ul
-              className={`flex animate__animated bg-white flex-col lg:hidden gap-5 absolute z-50 bg-opacity-70 w-full top-14  left-0 ${
-                isMenuOpen
-                  ? "animate__fadeInRight "
-                  : isPageLoad
+              className={`flex animate__animated bg-white flex-col lg:hidden gap-5 absolute z-50 bg-opacity-70 w-full top-14  left-0 ${isMenuOpen
+                ? "animate__fadeInRight "
+                : isPageLoad
                   ? "animate__fadeOutRight flex "
                   : "hidden"
-              } `}
+                } `}
             >
               {menu.map((item) => (
                 <NavLink

@@ -29,6 +29,14 @@ const mainRoutes = createBrowserRouter([
         element: <Paintings></Paintings>,
         loader: () => fetch("http://localhost:5000/api/v1/paintings"),
       },
+      // {
+      //   path: "generate",
+      //   element: (
+      //     <PrivateRoute>
+      //       <Kitchen></Kitchen>
+      //     </PrivateRoute>
+      //   ),
+      // },
       {
         path: "generate",
         element: (
